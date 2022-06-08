@@ -21,7 +21,7 @@ class CategoryFormType extends AbstractType
 
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefaults(['data_clases' => CategoryDto::class,]);
+        $resolver->setDefaults(['data_clases' => CategoryDto::class, 'csrf_protection' => false]);
     }
 
     public function getBlockPrefix()
